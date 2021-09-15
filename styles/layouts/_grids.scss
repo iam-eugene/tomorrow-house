@@ -63,7 +63,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
     }
   }
 
-  @include reponsive(T) {
+  @include responsive(T) {
     max-width: $md-max-container;
     padding: 0 $md-margin;
 
@@ -74,7 +74,7 @@ $lg-max-container: ($lg-unit + $gutter) * $lg-columns;
     }
   }
 
-  @include reponsive(D) {
+  @include responsive(D) {
     max-width: $lg-max-container;
     padding: 0;
 
