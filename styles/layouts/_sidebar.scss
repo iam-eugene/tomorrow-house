@@ -1,0 +1,166 @@
+.sidebar {
+  width: 240px;
+  height: 100vh;
+  padding: 32px 20px;
+  background-color: $white;
+  // border: 1px solid $red;
+
+  &-header {
+    padding: 0 12px;
+
+    .logo {
+      @include flexbox(start);
+
+      a {
+        display: block;
+      }
+
+      img {
+        display: block;
+        width: auto;
+        height: 20px;
+      }
+    }
+  }
+
+  &-user,
+  &-auth {
+    @include flexbox(start);
+
+    height: 88px;
+  }
+
+  &-user {
+    // padding: 32px 0;
+
+    a {
+      @include flexbox(start);
+      @include text-style(14, $primary);
+      width: 100%;
+
+      .avatar-24 {
+        flex-grow: 0;
+        flex-shrink: 0;
+        margin-right: 8px;
+      }
+
+      .username {
+        flex-grow: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &-auth {
+    @include flexbox(between);
+    // padding: 24px 0;
+
+    a {
+      width: 84px;
+    }
+  }
+
+  &-nav {
+    .drawer-menu {
+      &-btn {
+        @include flexbox(start);
+        @include text-style(18, $primary);
+
+        position: relative;
+        width: 200px;
+        height: 54px;
+        border-top: 1px solid $border;
+        // border: 1px solid $red;
+
+        &.is-active {
+          color: $blue;
+
+          .ic-chevron {
+            transform: rotate(180deg);
+          }
+        }
+
+        i {
+          @include flexbox;
+          color: $primary;
+        }
+
+        .drawer-icon {
+          width: 40px;
+          height: 40px;
+          font-size: 24px;
+          // background-color: aquamarine;
+        }
+
+        .ic-chevron {
+          position: absolute;
+          right: 0;
+          width: 32px;
+          height: 32px;
+          font-size: 16px;
+          // background-color: aquamarine;
+        }
+      }
+
+      &-content {
+        @include text-style(14, $primary);
+        padding-bottom: 8px;
+        font-weight: 700;
+
+        .drawer-menu-item {
+          position: relative;
+          width: 200px;
+          height: 36px;
+          // border: 1px solid $blue;
+
+          &.is-active {
+            a {
+              color: $blue;
+            }
+          }
+
+          a {
+            @include pos-center-y;
+            width: 100%;
+            padding-left: 12px;
+          }
+
+          .ic-new {
+            color: $red;
+          }
+        }
+      }
+    }
+
+    .drawer-menu:last-child {
+      .drawer-menu-btn {
+        margin-bottom: 16px;
+        border-bottom: 1px solid $red;
+      }
+    }
+  }
+
+  .sidebar-user-menu {
+    @include text-style(14, $primary);
+    // border: 1px solid $red;
+    // background-color: aqua;
+    width: 200px;
+
+    .user-menu-item {
+      a {
+        @include flexbox(start);
+
+        // width: ;
+        height: 36px;
+        padding: 0 12px;
+        // border: 1px solid $blue;
+      }
+
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}

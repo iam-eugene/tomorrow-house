@@ -182,39 +182,53 @@
             <div class="avatar-24">
               <img src="./assets/images/img-user-01.jpg" art="유저" />
             </div>
-            <strong class="username">사달라</strong>
+            <strong class="username">
+              사달라사달라사달라사달라사달라사달라사달라
+            </strong>
           </a>
         </div>
 
         <!-- NOTE : 로그인 안 했을 때 -->
-        <div class="sidebar-auth">
+        <!-- <div class="sidebar-auth">
           <a class="btn-outline btn-40" href="/">로그인</a>
           <a class="btn-primary btn-40" href="/">회원가입</a>
-        </div>
+        </div> -->
       </header>
 
       <nav class="sidebar-nav">
         <h2 class="visually-hidden">사이드바 메뉴</h2>
 
-        <div class="drawer-manu">
-          <button class="drawer-manu-btn" type="button" aria-label="스토어">
-            <i class="ic-store" aria-hidden></i>
+        <div class="drawer-menu">
+          <button class="drawer-menu-btn" type="button" aria-label="스토어">
+            <i class="drawer-icon ic-store" aria-hidden></i>
+            <strong>커뮤니티</strong>
+            <i class="ic-chevron" aria-hidden></i>
+          </button>
+        </div>
+
+        <div class="drawer-menu">
+          <button
+            class="drawer-menu-btn is-active"
+            type="button"
+            aria-label="스토어"
+          >
+            <i class="drawer-icon ic-store" aria-hidden></i>
             <strong>스토어</strong>
             <i class="ic-chevron" aria-hidden></i>
           </button>
 
-          <div class="drawer-manu-content">
-            <ul class="drawer-manu-list">
-              <li class="drawer-manu-item">
+          <div class="drawer-menu-content">
+            <ul class="drawer-menu-list">
+              <li class="drawer-menu-item is-active">
                 <a href="/">스토어홈</a>
               </li>
-              <li class="drawer-manu-item">
+              <li class="drawer-menu-item">
                 <a href="/">카테고리</a>
               </li>
-              <li class="drawer-manu-item">
+              <li class="drawer-menu-item">
                 <a href="/">신혼가구</a>
               </li>
-              <li class="drawer-manu-item">
+              <li class="drawer-menu-item">
                 <a href="/">
                   기획전
                   <i class="ic-new" lang="en" aria-label="new"></i>
@@ -222,6 +236,14 @@
               </li>
             </ul>
           </div>
+        </div>
+
+        <div class="drawer-menu">
+          <button class="drawer-menu-btn" type="button" aria-label="스토어">
+            <i class="drawer-icon ic-store" aria-hidden></i>
+            <strong>인테리어시공</strong>
+            <i class="ic-chevron" aria-hidden></i>
+          </button>
         </div>
 
         <!-- NOTE : 로그인 했을 때 -->
