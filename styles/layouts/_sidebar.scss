@@ -3,7 +3,6 @@
   height: 100vh;
   padding: 32px 20px;
   background-color: $white;
-  // border: 1px solid $red;
 
   &-header {
     padding: 0 12px;
@@ -62,24 +61,31 @@
     }
   }
 
+  &-nav {
+    .drawer-menu {
+      border-top: 1px solid $border;
+
+      &.is-expert {
+        border-bottom: 1px solid $border;
+      }
+    }
+  }
+
   &-user-menu {
-    @include text-style(14, $primary);
-    // border: 1px solid $red;
-    // background-color: aqua;
-    width: 200px;
+    margin-top: 16px;
 
     .user-menu-item {
       a {
         @include flexbox(start);
+        @include text-style(14, $primary);
 
-        // width: ;
+        width: 200px;
         height: 36px;
         padding: 0 12px;
-        // border: 1px solid $blue;
-      }
 
-      &:hover {
-        color: $blue;
+        &:active {
+          color: $blue;
+        }
       }
     }
   }
