@@ -1,4 +1,7 @@
 .lnb {
+  $lnb-link-padding: 8px;
+  $grid-margin: $sm-margin + $gutter / 2;
+
   overflow-x: auto;
 
   &::-webkit-scrollbar {
@@ -8,9 +11,11 @@
   &-list {
     @include inline-flexbox(start);
 
-    position: relative;
-    left: -8px;
+    height: 40px;
+    padding: 0 #{$grid-margin - $lnb-link-padding};
+    margin-left: -#{$grid-margin};
     white-space: nowrap;
+    border-bottom: 1px solid $border;
     // width: max-content; 호환성 문제
   }
 
@@ -27,12 +32,9 @@
       @include text-style(13, $dark);
 
       height: 40px;
-      padding: 0 8px;
+      padding: 0 $lnb-link-padding;
       font-weight: 700;
-    }
-
-    .ic-new {
-      color: $red;
+      border-bottom: 2px solid transparent;
     }
   }
 }
