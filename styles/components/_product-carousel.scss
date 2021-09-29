@@ -80,11 +80,9 @@
         @include flexbox;
         width: 56px;
         height: 56px;
-        margin-right: 8px;
         overflow: hidden;
         border-radius: 4px;
         opacity: 1;
-        // transition: transform 0.2 ease-in-out;
 
         &:hover {
           border: 2px solid $blue;
@@ -94,6 +92,35 @@
       img {
         display: block;
         width: 56px;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    @include flexbox(end, start);
+    flex-direction: row-reverse;
+
+    &-slider {
+      width: 500px;
+      height: 500px;
+    }
+
+    &-thumnail {
+      margin-right: 8px;
+    }
+
+    .thumnail-list {
+      flex-direction: column;
+    }
+
+    .thumnail-item {
+      margin-right: 0;
+      margin-bottom: 8px;
+
+      button,
+      img {
+        width: 75px;
+        height: 75px;
       }
     }
   }
