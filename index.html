@@ -657,7 +657,11 @@
                 <div class="user-gallery" role="region">
                   <div class="user-gallery-slider">
                     <ol class="slider-list">
-                      <li class="slider-item">
+                      <li
+                        class="slider-item"
+                        role="tabpanel"
+                        aria-labelledby="user-gallery-tab1"
+                      >
                         <div class="gallery-card">
                           <figure class="gallery-card-img">
                             <img
@@ -681,7 +685,11 @@
                           </div>
                         </div>
                       </li>
-                      <li class="slider-item">
+                      <li
+                        class="slider-item"
+                        role="tabpanel"
+                        aria-labelledby="user-gallery-tab2"
+                      >
                         <div class="gallery-card">
                           <figure class="gallery-card-img">
                             <img
@@ -705,7 +713,11 @@
                           </div>
                         </div>
                       </li>
-                      <li class="slider-item">
+                      <li
+                        class="slider-item"
+                        role="tabpanel"
+                        aria-labelledby="user-gallery-tab3"
+                      >
                         <div class="gallery-card">
                           <figure class="gallery-card-img">
                             <img
@@ -729,7 +741,11 @@
                           </div>
                         </div>
                       </li>
-                      <li class="slider-item">
+                      <li
+                        class="slider-item"
+                        role="tabpanel"
+                        aria-labelledby="user-gallery-tab4"
+                      >
                         <div class="gallery-card">
                           <figure class="gallery-card-img">
                             <img
@@ -753,11 +769,100 @@
                           </div>
                         </div>
                       </li>
+                      <li
+                        class="slider-item"
+                        role="tabpanel"
+                        aria-labelledby="user-gallery-tab5"
+                      >
+                        <div class="gallery-card">
+                          <figure class="gallery-card-img">
+                            <img
+                              src="./assets/images/img-review-05.jpg"
+                              alt=""
+                            />
+                            <figcaption class="visually-hidden">
+                              밤비님의 리뷰사진
+                            </figcaption>
+                          </figure>
+
+                          <div class="gallery-card-detail">
+                            <a class="avatar-32" href="/">
+                              <img
+                                src="./assets/images/img-user-01.jpg"
+                                art="유저"
+                              />
+                            </a>
+                            <a class="user-name" href="/">밤비</a>
+                            <span class="order">5/461</span>
+                          </div>
+                        </div>
+                      </li>
                     </ol>
                   </div>
 
                   <div class="user-gallery-thumnail">
-                    <!-- 썸네일 -->
+                    <ol class="thumnail-list" role="tablist">
+                      <li
+                        class="thumnail-item is-active"
+                        id="user-gallery-tab1"
+                        role="tab"
+                      >
+                        <button type="button">
+                          <img
+                            src="./assets/images/img-review-01.jpg"
+                            alt="1번 이미지"
+                          />
+                        </button>
+                      </li>
+                      <li
+                        class="thumnail-item"
+                        id="user-gallery-tab2"
+                        role="tab"
+                      >
+                        <button type="button">
+                          <img
+                            src="./assets/images/img-review-02.jpg"
+                            alt="2번 이미지"
+                          />
+                        </button>
+                      </li>
+                      <li
+                        class="thumnail-item"
+                        id="user-gallery-tab3"
+                        role="tab"
+                      >
+                        <button type="button">
+                          <img
+                            src="./assets/images/img-review-03.jpg"
+                            alt="3번 이미지"
+                          />
+                        </button>
+                      </li>
+                      <li
+                        class="thumnail-item"
+                        id="user-gallery-tab4"
+                        role="tab"
+                      >
+                        <button type="button">
+                          <img
+                            src="./assets/images/img-review-04.jpg"
+                            alt="4번 이미지"
+                          />
+                        </button>
+                      </li>
+                      <li
+                        class="thumnail-item"
+                        id="user-gallery-tab5"
+                        role="tab"
+                      >
+                        <button type="button">
+                          <img
+                            src="./assets/images/img-review-05.jpg"
+                            alt="5번 이미지"
+                          />
+                        </button>
+                      </li>
+                    </ol>
                   </div>
                 </div>
               </div>
