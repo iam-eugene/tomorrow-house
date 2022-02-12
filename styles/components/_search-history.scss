@@ -35,7 +35,7 @@
     .word-btn {
       @include text-style(16, $primary);
       width: 100%;
-      padding: 10px $close-btn-size 8px 10px;
+      padding: 10px $close-btn-size 10px 8px;
       font-weight: 400;
       text-align: left;
     }
