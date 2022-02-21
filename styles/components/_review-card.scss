@@ -78,7 +78,6 @@
     }
 
     p {
-      @include inline-flexbox;
       @include text-style(12, $primary);
 
       strong {
