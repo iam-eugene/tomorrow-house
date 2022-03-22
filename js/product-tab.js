@@ -9,7 +9,8 @@ let disableUpdating = false
 
 function toggleActiveTab() {
   const tabItem = this.parentNode
-  if (currentActiveTab != tabItem) {
+
+  if (currentActiveTab !== tabItem) {
     disableUpdating = true
     tabItem.classList.add('is-active')
     currentActiveTab.classList.remove('is-active')
@@ -60,6 +61,7 @@ function detectTabPanelPosition() {
     const position = window.scrollY + panel.getBoundingClientRect().top
     productTabPanelPositionMap[id] = position
   })
+
   updateActiveTabOnScroll()
 }
 
@@ -94,9 +96,9 @@ function updateActiveTabOnScroll() {
   if (newActiveTab) {
     newActiveTab = newActiveTab.parentNode
 
-    if (newActiveTab != currentActiveTab) {
+    if (newActiveTab !== currentActiveTab) {
       newActiveTab.classList.add('is-active')
-      if (currentActiveTab != null) {
+      if (currentActiveTab !== null) {
         currentActiveTab.classList.remove('is-active')
       }
       currentActiveTab = newActiveTab

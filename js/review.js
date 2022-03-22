@@ -31,7 +31,7 @@ function toggleReviewLikeBtn() {
     let newCount = count
     if (isLiked) {
       newCount = newCount - 1
-      if (newCount === 0) {
+      if (newCount == 0) {
         reviewCardFooter.removeChild(textElement)
       } else {
         countSpan.innerHTML = newCount.toLocaleString()

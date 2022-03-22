@@ -20,7 +20,7 @@ function closeGnbSearchHistoryOnClickingOutside(e) {
 }
 
 function openGnbSearchHistory() {
-  if (gnbSearchHistoryList.children.length === 0) {
+  if (gnbSearchHistoryList.children.length == 0) {
     return
   }
 
@@ -44,7 +44,7 @@ function deleteSearchHistoryItem(e) {
   const itemToDelete = this.parentNode
   gnbSearchHistoryList.removeChild(itemToDelete)
 
-  if (gnbSearchHistoryList.children.length === 0) {
+  if (gnbSearchHistoryList.children.length == 0) {
     closeGnbSearchHistory()
   }
 }
